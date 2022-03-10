@@ -1,0 +1,462 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+.hero{
+    height: 100vh;
+    width: 100%;
+    background-image: url(../image/sky.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    overflow-x: hidden;
+
+}
+
+  /* STYLING OF NAVBAR  */
+.nav-bar{
+    background: #1d4052;
+    color: #fff;
+    padding: 15px;
+    font-family: sans-serif;
+
+}
+
+.nav-bar img{
+    height: 85px;
+    position: relative;
+    float: left;
+    margin-right: 20px;
+    bottom: 14px;
+}
+  .menu-right{
+      text-align: right;
+  }
+
+  ul li{
+      display: inline-block;
+      margin: 20px;
+      list-style: none;
+      text-decoration: none;
+      
+  }
+
+  .nav-bar ul li a{
+      text-decoration: none;
+      color: #fff;
+  }
+
+  span{
+      margin: 0 20px;
+      font-size: 28px;
+      cursor: pointer;
+      display: none;
+
+  }
+
+  /* STYLING OF HEADING TAG */
+
+  .heading{
+    position: absolute;
+    top: 28%;
+    left: 21%;
+    font-size: 34px;
+    background: linear-gradient(to right, #f32170, #ffeb07);
+    /* background: linear-gradient(to right, rgb(243, 33, 112), rgb(255, 235, 7),#2196f3,#ff00eb); */
+    border-radius: 6px;
+  }
+
+
+.highway{
+    height: 130px;
+    width: 500%;
+    display: block;
+    background-image: url(../image/road.jpg);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    background-repeat: repeat-x;
+    animation: highway 5s linear infinite;
+}
+
+@keyframes highway {
+    100%{
+        transform: translateX(-3400px);
+
+    }
+}
+
+.city{
+    height: 250px;
+    width: 500%;
+    position: absolute;
+    background-image: url(../image/city.png);
+    bottom: 130px;
+    left: 0;
+    right: 0;
+    display: block;
+    z-index: 1;
+    background-repeat: repeat-x;
+    animation: city 20s linear infinite;
+
+}
+
+@keyframes city {
+    100%{
+        transform: translateX(-1400px);
+    }
+}
+
+.car{
+    width: 284px;
+    left: 39%;
+    bottom: 100px;
+    transform: translate(-50);
+    position: absolute;
+    z-index: 2;
+}
+
+.car img{
+    width: 100%;
+    animation: car 1s linear infinite;
+}
+
+@keyframes car {
+    100%{
+        transform: translateY(-1px);
+    }
+    50%{
+        transform: translateY(1px);
+    }
+
+    0%{
+        transform: translateY(-1px);
+    }
+}
+
+.wheel{
+    left: 50%;
+    bottom: 161px;
+    transform: translate(-50%);
+    position: absolute;
+    z-index: 2;
+}
+
+.wheel img{
+    width: 56px;
+    height: 56px;
+    animation: wheel 0.2s linear infinite;
+}
+
+.back-wheel{
+    left: -143px;
+    position: absolute;
+}
+
+.front-wheel{
+    left: 29px;
+    position: absolute;
+}
+
+@keyframes wheel {
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+@media only screen and (max-width: 850px) {
+
+    span{
+        display: block;
+    }
+    ul li{
+        display: block;
+    }
+    
+    ul{
+        display: none;
+    }
+
+    .car {
+        width: 284px;
+        left: 30%;
+        bottom: 100px;
+        transform: translate(-50);
+        position: absolute;
+        z-index: 2;
+    }
+
+    .heading {
+        width: 83%;
+        top: 28%;
+        left: 9%;
+        font-size: 33px;
+        text-align: center;
+        /* background: linear-gradient(to right, #f32170, #ffeb07); */
+        /* background: linear-gradient(to right, rgb(243, 33, 112), rgb(255, 235, 7),#2196f3,#ff00eb); */
+        border-radius: 6px;
+    }
+
+    .nav-bar img {
+        height: 80px;
+        bottom: 23px;
+    }
+    
+}
+
+
+/* CREATING RESPONSIVENESS IN WEBSITE  */
+@media only screen and (max-width: 1280px) {
+
+    
+    .car {
+        left: 38%;
+    }
+
+}
+
+@media only screen and (max-width: 1024px) {
+
+    
+    .car {
+        left: 34%;
+    }
+
+}
+
+
+@media only screen and (max-width: 912px) {
+
+    
+    .car {
+        left: 32%;
+    }
+
+}
+@media only screen and (max-width: 820px) {
+
+    
+    .car {
+        left: 30%;
+    }
+    .heading {
+        left: 4%;
+    }
+
+}
+@media only screen and (max-width: 800px) {
+
+    
+    .car {
+        left: 31%;
+    }
+    .heading {
+        left: 4%;
+    }
+
+}
+
+
+@media only screen and (max-width: 768px) {
+
+    
+    .car {
+        left: 28%;
+    }
+    .heading {
+        left: 4%;
+    }
+
+}
+
+@media only screen and (max-width: 700px) {
+
+    
+    .car {
+        left: 25%;
+    }
+    .heading {
+        top: 37%;
+        font-size: 29px;
+    }
+
+}
+
+@media only screen and (max-width: 640px) {
+
+    
+    .car {
+        left: 23%;
+    }
+    .heading {
+        top: 37%;
+        font-size: 29px;
+    }
+
+}
+
+@media only screen and (max-width: 640px) {
+
+    
+    .car {
+        left: 21%;
+    }
+    .heading {
+        top: 37%;
+        font-size: 25px;
+    }
+
+}
+
+@media only screen and (max-width: 560px) {
+
+    
+    .car {
+        left: 20%;
+    }
+    .heading {
+        top: 37%;
+        font-size: 23px;
+    }
+
+}
+
+@media only screen and (max-width: 560px) {
+
+    
+    .car {
+        left: 19%;
+    }
+    .heading {
+        top: 37%;
+        font-size: 21px;
+    }
+
+}
+@media only screen and (max-width: 520px) {
+
+    
+    .car {
+        left: 18%;
+    }
+    .heading {
+        top: 37%;
+        font-size: 21px;
+    }
+
+}
+@media only screen and (max-width: 495px) {
+
+    
+    .car {
+        left: 16%;
+    }
+    .heading {
+        top: 37%;
+        font-size: 21px;
+    }
+    .nav-bar img {
+        height: 55px;
+        bottom: 10px;
+    }
+
+}
+
+@media only screen and (max-width: 460px) {
+
+    
+    .car {
+        left: 14%;
+    }
+    .heading {
+        top: 37%;
+        font-size: 21px;
+    }
+    .nav-bar img {
+        height: 55px;
+        bottom: 10px;
+    }
+
+}
+
+@media only screen and (max-width: 440px) {
+
+    
+    .car {
+        left: 12%;
+    }
+
+}
+
+@media only screen and (max-width: 414px) {
+
+    
+    .car {
+        left: 9%;
+    }
+    .nav-bar img {
+        height: 55px;
+        bottom: 10px;
+    }
+}
+
+@media only screen and (max-width: 414px) {
+
+    
+    .car {
+        left: 8%;
+    }
+    .heading {
+        top: 37%;
+        font-size: 20px;
+    }
+    .nav-bar img {
+        height: 55px;
+        bottom: 10px;
+    }
+
+}
+
+@media only screen and (max-width: 360px) {
+
+    
+    .car {
+        left: 5%;
+    }
+    .heading {
+        top: 37%;
+        font-size: 20px;
+    }
+    .nav-bar img {
+        height: 55px;
+        bottom: 10px;
+    }
+
+}
+
+@media only screen and (max-width: 280px) {
+
+    .car{
+        width: 250px;
+    }
+
+    .heading {
+        top: 37%;
+        font-size: 20px;
+    }
+    .nav-bar img {
+        height: 55px;
+        bottom: 10px;
+    }
+
+}
+
+
+
+
+
+
+
